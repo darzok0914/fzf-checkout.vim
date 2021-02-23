@@ -2,7 +2,7 @@
 " https://github.com/git/git/blob/076cbdcd739aeb33c1be87b73aebae5e43d7bcc5/ref-filter.c#L474
 let s:format = shellescape(
       \ '%(color:green)%(refname:short)  ' .
-      \ '%(color:reset)%(color:blue)%(subject) ' .
+      \ '%(color:reset)%(color:blue italic)%(subject) ' .
       \ '%(color:reset)%(color:red bold)%(committerdate:relative) ' .
       \ '%(color:reset)%(color:reset)-> %(objectname:short)'
       \)
