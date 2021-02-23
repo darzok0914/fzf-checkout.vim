@@ -3,7 +3,7 @@
 let s:format = shellescape(
       \ '%(color:reset)%(refname:short)  ' .
       \ '%(color:reset)%(color:green)%(subject) ' .
-      \ '%(color:reset)%(color:green dim italic)%(committerdate:relative) ' .
+      \ '%(color:reset)%(color:red dim italic)%(committerdate:relative) ' .
       \ '%(color:reset)%(color:blue)-> %(objectname:short)'
       \)
 let s:color_regex = '\e\[[0-9;]\+m'
