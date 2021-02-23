@@ -2,9 +2,9 @@
 " https://github.com/git/git/blob/076cbdcd739aeb33c1be87b73aebae5e43d7bcc5/ref-filter.c#L474
 let s:format = shellescape(
       \ '%(color:green)%(refname:short)  ' .
-      \ '%(color:reset)%(color:reset)%(subject) ' .
+      \ '%(color:reset)%(color:blue)%(subject) ' .
       \ '%(color:reset)%(color:red bold)%(committerdate:relative) ' .
-      \ '%(color:reset)%(color:blue dim italic)-> %(objectname:short)'
+      \ '%(color:reset)%(color:reset dim italic)-> %(objectname:short)'
       \)
 let s:color_regex = '\e\[[0-9;]\+m'
 
