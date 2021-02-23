@@ -169,7 +169,7 @@ function! fzf_checkout#list(bang, type, options, deprecated) abort
 
   if a:type ==# 'branch'
     let l:name = 'GBranches'
-    let l:prompt = 'Branches> '
+    let l:prompt = 'Branches > '
     let l:subcommand = 'branch ' . s:branch_filters[l:filter]
 
     if a:deprecated
