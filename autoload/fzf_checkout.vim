@@ -4,7 +4,7 @@ let s:format = shellescape(
       \ '%(color:green)%(refname:short)  ' .
       \ '%(color:reset)%(color:blue)%(subject) ' .
       \ '%(color:reset)%(color:red bold)%(committerdate:relative) ' .
-      \ '%(color:reset)%(color:reset dim italic)-> %(objectname:short)'
+      \ '%(color:reset)%(color:reset italic)-> %(objectname:short)'
       \)
 let s:color_regex = '\e\[[0-9;]\+m'
 
